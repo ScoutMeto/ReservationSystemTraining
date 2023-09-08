@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-//import com.mykettlebellproject.ragnarokproject.UserController;
+
 
 //import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -65,6 +65,7 @@ public class web_faceController {
 
         if (user != null && user.getPassword().equals(password)) {
             // Přihlášení úspěšné
+
             return "redirect:/uspesnePrihlaseni";
         } else {
             // Přihlášení selhalo
