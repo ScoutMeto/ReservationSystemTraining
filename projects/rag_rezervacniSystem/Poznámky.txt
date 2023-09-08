@@ -1,0 +1,42 @@
+Následující plány pro prostředí aplikace:
+1) umožnit lidem získat přístup do nabízeného tréninku v databázi
+2) umožnit lidem upravit trénink dle sebe
+3) umožnit lidem vytvořit vlastní trénink (cvičili doma, např. běhali)
+-zahrnuje práci s MySQL, javou v backendu a úpravou frontendu pro políčka,
+	se kterými může uživatel interagovat
+
+Využívané grafy: https://d3-graph-gallery.com/
+Scatter - pro korelace a závislosti (jak daný cvik souvisí s výkony jiných)
+Spider - pro ranking, jaký typ tréninku člověk absolvuje
+Line plot - pro evoluci cviků/cviku v čase
+
+
+Následující plány pro práci s daty:
+Pro zobrazování grafů ve vaší desktopové aplikaci na základě dat z databáze můžete využít několik knihoven a technologií. Zde je postup, jak na to:
+
+Získání dat z databáze:
+
+Nejprve musíte zajistit, že máte dostupné potřebné data ve vaší MySQL databázi. To jste už asi vyřešil, když jste databázi dlouhodobě vedl a ukládal sportovní výkony.
+Vytvoření REST API v aplikaci Spring Boot:
+
+Abyste mohl data získat z vaší Java aplikace do frontendu (HTML, CSS, JS), je vhodné vytvořit REST API, které bude poskytovat data ve formátu JSON. Spring Boot vám umožní snadno vytvořit takové API.
+Volání REST API pomocí JavaScriptu:
+
+Využijete JavaScript nebo framework jako React nebo Vue.js pro volání REST API a získání dat z vaší Spring Boot aplikace.
+Zobrazení grafu:
+
+Pro zobrazení grafů využijte nějakou knihovnu pro vizualizaci dat. Existuje mnoho možností, zde jsou některé populární knihovny pro práci s grafy:
+
+Chart.js: Jednoduchá a snadno použitelná knihovna pro vytváření různých typů grafů, jako jsou čárové, sloupcové, koláčové atd. Je snadno nastavitelná a můžete ji snadno integrovat do vašeho projektu.
+
+D3.js: Pokud potřebujete vytvořit pokročilé a interaktivní vizualizace, D3.js je velmi mocná knihovna. Nabízí větší kontrolu nad vzhledem a chováním grafů, ale vyžaduje více práce při implementaci.
+
+Highcharts: Komerční knihovna s velkým množstvím možností a podpory. Nabízí interaktivní grafy, které jsou dobře zdokumentované a snadno použitelné.
+
+Integrace grafu do HTML stránky:
+
+Po získání dat z REST API a vytvoření grafu pomocí vybrané knihovny ho jednoduše integrujte do vaší HTML stránky, kde máte vizualizaci sportovních výkonů.
+Stylování a responzivita:
+
+Přizpůsobte vzhled grafů pomocí CSS, aby ladil s designem vaší aplikace. Dejte pozor na to, aby byly grafy responzivní, aby se správně zobrazovaly na různých zařízeních.
+Tímto postupem byste měl být schopen úspěšně vizualizovat sportovní výkony ve vaší desktopové aplikaci. Můžete si vybrat knihovnu pro práci s grafy, která nejlépe vyhovuje vašim potřebám a znalostem, a pak ji integrovat do vaší aplikace.
