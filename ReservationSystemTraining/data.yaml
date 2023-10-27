@@ -1,0 +1,4 @@
+room_001: {people_amount: 3, price_night: 60, breakfast: null, lunch: null, dinner: null}
+room_002: {people_amount: 4, price_night: 80, breakfast: null, lunch: null, dinner: null}
+room_003: {people_amount: 5, price_night: 100, breakfast: null, lunch: null, dinner: null}
+mealData: {lunch: 5, breakfast: 5, dinner: 5}
