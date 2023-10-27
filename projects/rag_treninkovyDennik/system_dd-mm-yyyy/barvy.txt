@@ -1,3 +1,0 @@
-červená		#D7141A
-modrá		#11457E
-bílá		#ffffff
